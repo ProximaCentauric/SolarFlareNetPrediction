@@ -1,0 +1,17 @@
+======================================================================
+ORIGINAL DATA FILE INFORMATION
+======================================================================
+Backup created: 2025-12-13 23:49:48
+
+C-CLASS:
+  training_data_C_24.csv: 179,647 rows
+  testing_data_C_24.csv: 62,560 rows
+
+M-CLASS:
+  training_data_M_24.csv: 199,641 rows
+  testing_data_M_24.csv: 62,560 rows
+
+M5-CLASS:
+  training_data_M5_24.csv: 222,157 rows
+  testing_data_M5_24.csv: 62,560 rows
+

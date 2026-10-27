@@ -1,0 +1,90 @@
+======================================================================
+SOLAR FLARE PREDICTION - TRADITIONAL ML BASELINES
+======================================================================
+
+PREDICTION TASK
+----------------------------------------------------------------------
+Flare Class: C
+Time Window: 24 hours ahead
+Training Samples: 40000
+Testing Samples: 13928
+Number of Features: 29
+
+CLASS DISTRIBUTION
+----------------------------------------------------------------------
+Training Set:
+  Positive (Flare): 20000 (50.00%)
+  Negative (No Flare): 20000 (50.00%)
+Testing Set:
+  Positive (Flare): 6964 (50.00%)
+  Negative (No Flare): 6964 (50.00%)
+
+TRADITIONAL ML MODEL PERFORMANCE
+======================================================================
+Model                Accuracy   Precision  Recall     F1-Score   ROC-AUC    TSS       
+----------------------------------------------------------------------------------------------------
+Random Forest        0.9003     0.8553     0.9637     0.9063     0.9686     0.8007    
+XGBoost              0.8450     0.8366     0.8574     0.8469     0.8988     0.6900    
+KNN                  0.8786     0.8616     0.9021     0.8814     0.9073     0.7572    
+
+BEST TRADITIONAL MODEL (by F1-Score)
+----------------------------------------------------------------------
+Model: Random Forest
+F1-Score: 0.9063
+ROC-AUC: 0.9686
+TSS: 0.8007
+
+DETAILED RESULTS BY MODEL
+======================================================================
+
+Random Forest
+----------------------------------------------------------------------
+Confusion Matrix:
+                 Predicted
+               No Flare    Flare
+Actual No Flare    5829      1135
+       Flare        253      6711
+
+True Positives:  6711
+False Positives: 1135
+True Negatives:  5829
+False Negatives: 253
+
+XGBoost
+----------------------------------------------------------------------
+Confusion Matrix:
+                 Predicted
+               No Flare    Flare
+Actual No Flare    5798      1166
+       Flare        993      5971
+
+True Positives:  5971
+False Positives: 1166
+True Negatives:  5798
+False Negatives: 993
+
+KNN
+----------------------------------------------------------------------
+Confusion Matrix:
+                 Predicted
+               No Flare    Flare
+Actual No Flare    5955      1009
+       Flare        682      6282
+
+True Positives:  6282
+False Positives: 1009
+True Negatives:  5955
+False Negatives: 682
+
+KEY INSIGHTS
+======================================================================
+1. Data Quality: Successfully loaded and preprocessed 53928 samples
+2. Class Imbalance: Addressed using balanced sampling
+3. Traditional ML Baselines: Evaluated Random Forest and KNN
+4. Best Performance: Random Forest achieved F1-score of 0.9063
+5. Next Step: Compare with SolarFlareNet for temporal modeling assessment
+6. Space Weather: Results provide baseline for forecasting capability
+
+======================================================================
+END OF REPORT
+======================================================================

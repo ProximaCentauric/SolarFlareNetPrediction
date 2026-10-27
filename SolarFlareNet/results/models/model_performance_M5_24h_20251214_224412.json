@@ -1,0 +1,92 @@
+{
+  "timestamp": "20251214_224412",
+  "flare_class": "M5",
+  "time_window": "24h",
+  "dataset_info": {
+    "training_samples": 40000,
+    "testing_samples": 11264,
+    "num_features": 29,
+    "class_balance_train": {
+      "positive": 20000,
+      "negative": 20000
+    },
+    "class_balance_test": {
+      "positive": 5632,
+      "negative": 5632
+    }
+  },
+  "models": {
+    "Random Forest": {
+      "accuracy": 0.8583096590909091,
+      "precision": 0.9565610859728507,
+      "recall": 0.7507102272727273,
+      "f1_score": 0.841225626740947,
+      "roc_auc": 0.9645598230283122,
+      "tss": 0.7166193181818182,
+      "confusion_matrix": [
+        [
+          5440,
+          192
+        ],
+        [
+          1404,
+          4228
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 0.7735262784090909,
+      "precision": 0.826031746031746,
+      "recall": 0.6930042613636364,
+      "f1_score": 0.7536931543883364,
+      "roc_auc": 0.8411665199216732,
+      "tss": 0.5470525568181818,
+      "confusion_matrix": [
+        [
+          4810,
+          822
+        ],
+        [
+          1729,
+          3903
+        ]
+      ]
+    },
+    "SolarFlareNet": {
+      "accuracy": 0.7641157670454546,
+      "precision": 0.7212553919381228,
+      "recall": 0.8609730113636364,
+      "f1_score": 0.7849453662484824,
+      "roc_auc": 0.8286478342103565,
+      "tss": 0.5282315340909091,
+      "confusion_matrix": [
+        [
+          3758,
+          1874
+        ],
+        [
+          783,
+          4849
+        ]
+      ]
+    },
+    "KNN": {
+      "accuracy": 0.8194247159090909,
+      "precision": 0.8692528735632183,
+      "recall": 0.751953125,
+      "f1_score": 0.8063594821020563,
+      "roc_auc": 0.9332874235042855,
+      "tss": 0.6388494318181819,
+      "confusion_matrix": [
+        [
+          4995,
+          637
+        ],
+        [
+          1397,
+          4235
+        ]
+      ]
+    }
+  }
+}

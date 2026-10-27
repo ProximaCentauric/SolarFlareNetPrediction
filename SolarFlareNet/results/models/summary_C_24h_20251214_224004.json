@@ -1,0 +1,23 @@
+{
+  "project": "Solar Flare Prediction with Machine Learning",
+  "notebook": "MyMLCode.ipynb",
+  "timestamp": "20251214_224004",
+  "flare_class": "C",
+  "files_generated": {
+    "metrics": "results/model_performance_C_24h_20251214_224004.json",
+    "report": "results/complete_report_C_24h_20251214_224004.txt",
+    "predictions": "results/predictions_C_24h_20251214_224004.csv",
+    "models": [
+      "results/models/random_forest_C_24h.pkl",
+      "results/models/xgboost_C_24h.pkl",
+      "results/models/knn_C_24h.pkl",
+      "results/models/solarflarenet_C_24h.h5"
+    ]
+  },
+  "best_model": {
+    "name": "Random Forest",
+    "f1_score": 0.9062795408507766,
+    "roc_auc": 0.9685779285509032,
+    "tss": 0.800689259046525
+  }
+}
